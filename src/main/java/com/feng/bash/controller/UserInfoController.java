@@ -64,4 +64,16 @@ public class UserInfoController {
             reentrantLock.unlock();
         }
     }
+
+    public void ss() {
+        //上锁
+        try {
+            reentrantLock.lock();
+            num++;
+            System.out.println(Thread.currentThread().getId() + "：被锁定");
+        } finally {
+            System.out.println(num);
+            reentrantLock.unlock();
+        }
+    }
 }

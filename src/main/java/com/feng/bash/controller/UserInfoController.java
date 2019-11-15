@@ -64,7 +64,7 @@ public class UserInfoController {
         }
     }
 
-    public void pay() {
+    public void py() {
         //上锁
         try {
             reentrantLock.lock();

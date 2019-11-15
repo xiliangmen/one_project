@@ -49,7 +49,6 @@ public class UserInfoController {
             });
             thread.start();
         }
-
         return "";
     }
 
@@ -65,7 +64,7 @@ public class UserInfoController {
         }
     }
 
-    public void ones() {
+    public void pay() {
         //上锁
         try {
             reentrantLock.lock();

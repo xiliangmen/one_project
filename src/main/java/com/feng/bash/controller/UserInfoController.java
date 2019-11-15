@@ -65,7 +65,7 @@ public class UserInfoController {
         }
     }
 
-    public void ones() {
+    public void master() {
         //上锁
         try {
             reentrantLock.lock();

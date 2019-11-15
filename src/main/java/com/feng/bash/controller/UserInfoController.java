@@ -38,7 +38,7 @@ public class UserInfoController {
 
     @RequestMapping(value = "/lock")
     public String lock() {
-        System.out.println("主线程为："+Thread.currentThread().getId());
+        System.out.println("主线程为：" + Thread.currentThread().getId());
         for (int i = 5; i > 0; i--) {
             Thread thread = new Thread(new Runnable() {
                 @Override
@@ -65,7 +65,7 @@ public class UserInfoController {
         }
     }
 
-    public void sss() {
+    public void newService() {
         //上锁
         try {
             reentrantLock.lock();
